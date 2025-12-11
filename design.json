@@ -16,11 +16,11 @@
         },
         "blue": {
           "main": "#1E3A8A",
-          "description": "Azul principal usado em seções de destaque, hero sections e elementos estruturais",
+          "description": "Azul royal profundo usado em seções de destaque, hero sections e elementos estruturais - tom da logo VR Construtora",
           "variants": {
-            "light": "#3B82F6",
-            "dark": "#1E40AF",
-            "darker": "#1E3A8A"
+            "light": "#2D4FA8",
+            "dark": "#152A5C",
+            "darker": "#0F1F3D"
           }
         }
       },
