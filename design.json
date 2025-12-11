@@ -1,0 +1,759 @@
+{
+  "designSystem": {
+    "name": "VR Construtora Design System",
+    "version": "1.0.0",
+    "description": "Sistema de design baseado no design moderno e profissional da VR Construtora, focado em construção e engenharia",
+    
+    "colorPalette": {
+      "primary": {
+        "orange": {
+          "main": "#FF6B35",
+          "description": "Laranja principal usado em botões CTA, elementos de destaque e interações principais",
+          "variants": {
+            "light": "#FF8C5A",
+            "dark": "#E55A2B"
+          }
+        },
+        "blue": {
+          "main": "#1E3A8A",
+          "description": "Azul principal usado em seções de destaque, hero sections e elementos estruturais",
+          "variants": {
+            "light": "#3B82F6",
+            "dark": "#1E40AF",
+            "darker": "#1E3A8A"
+          }
+        }
+      },
+      "accent": {
+        "red": {
+          "main": "#DC2626",
+          "description": "Vermelho usado em ícones de destaque (+), badges e elementos de ênfase",
+          "usage": "Ícones de lista, badges de destaque, elementos decorativos"
+        },
+        "gold": {
+          "main": "#F59E0B",
+          "description": "Dourado usado como cor de destaque secundária",
+          "usage": "Elementos premium, destaques especiais"
+        }
+      },
+      "neutral": {
+        "background": {
+          "light": "#F5F5F5",
+          "description": "Fundo cinza claro usado como background geral da página"
+        },
+        "white": {
+          "main": "#FFFFFF",
+          "description": "Branco para cards, seções e elementos sobrepostos"
+        },
+        "text": {
+          "primary": "#1F2937",
+          "secondary": "#6B7280",
+          "description": "Cores de texto primário e secundário"
+        }
+      },
+      "semantic": {
+        "success": "#10B981",
+        "info": "#3B82F6",
+        "warning": "#F59E0B",
+        "error": "#DC2626"
+      }
+    },
+
+    "typography": {
+      "fontFamily": {
+        "primary": "sans-serif",
+        "description": "Fonte moderna e limpa, preferencialmente Inter, Roboto ou similar",
+        "fallback": "system-ui, -apple-system, sans-serif"
+      },
+      "scale": {
+        "hero": {
+          "size": "3.5rem - 4.5rem",
+          "weight": "700",
+          "lineHeight": "1.2",
+          "description": "Títulos principais de hero sections (ex: 'Building with Purpose and Awareness')"
+        },
+        "h1": {
+          "size": "2.5rem - 3rem",
+          "weight": "700",
+          "lineHeight": "1.3",
+          "description": "Títulos principais de seções"
+        },
+        "h2": {
+          "size": "2rem - 2.5rem",
+          "weight": "600",
+          "lineHeight": "1.4",
+          "description": "Subtítulos e títulos de seções secundárias"
+        },
+        "h3": {
+          "size": "1.5rem - 1.75rem",
+          "weight": "600",
+          "lineHeight": "1.5",
+          "description": "Títulos de cards e componentes"
+        },
+        "body": {
+          "size": "1rem",
+          "weight": "400",
+          "lineHeight": "1.6",
+          "description": "Texto de corpo padrão"
+        },
+        "small": {
+          "size": "0.875rem",
+          "weight": "400",
+          "lineHeight": "1.5",
+          "description": "Texto pequeno, labels, badges"
+        },
+        "caption": {
+          "size": "0.75rem",
+          "weight": "400",
+          "lineHeight": "1.4",
+          "description": "Legendas e texto auxiliar"
+        }
+      },
+      "styles": {
+        "bold": "700",
+        "semibold": "600",
+        "medium": "500",
+        "regular": "400"
+      }
+    },
+
+    "spacing": {
+      "scale": {
+        "xs": "0.25rem",
+        "sm": "0.5rem",
+        "md": "1rem",
+        "lg": "1.5rem",
+        "xl": "2rem",
+        "2xl": "3rem",
+        "3xl": "4rem",
+        "4xl": "6rem",
+        "5xl": "8rem"
+      },
+      "section": {
+        "padding": {
+          "vertical": "4rem - 6rem",
+          "horizontal": "1.5rem - 2rem",
+          "description": "Padding padrão para seções principais"
+        },
+        "gap": {
+          "between": "6rem - 8rem",
+          "description": "Espaçamento entre seções principais"
+        }
+      },
+      "component": {
+        "padding": {
+          "card": "1.5rem - 2rem",
+          "button": "0.75rem 1.5rem",
+          "input": "0.75rem 1rem"
+        },
+        "gap": {
+          "grid": "1.5rem - 2rem",
+          "flex": "1rem - 1.5rem"
+        }
+      }
+    },
+
+    "layout": {
+      "container": {
+        "maxWidth": "1280px",
+        "padding": "0 1.5rem",
+        "centered": true,
+        "description": "Container principal para conteúdo centralizado"
+      },
+      "grid": {
+        "columns": 12,
+        "gap": "1.5rem - 2rem",
+        "breakpoints": {
+          "mobile": "640px",
+          "tablet": "768px",
+          "desktop": "1024px",
+          "large": "1280px"
+        }
+      },
+      "sections": {
+        "fullWidth": true,
+        "maxContentWidth": "1280px",
+        "centered": true
+      }
+    },
+
+    "components": {
+      "header": {
+        "description": "Cabeçalho fixo ou estático com navegação principal",
+        "styles": {
+          "background": "white",
+          "padding": "1rem 2rem",
+          "boxShadow": "0 1px 3px rgba(0,0,0,0.1)",
+          "position": "sticky ou fixed",
+          "zIndex": 1000
+        },
+        "elements": {
+          "logo": {
+            "position": "left",
+            "height": "40px - 50px",
+            "description": "Logo com ícone abstrato de construção (vermelho e azul)"
+          },
+          "navigation": {
+            "items": ["Home", "About Us", "Our Services", "Our Projects", "Contact Us"],
+            "spacing": "1.5rem - 2rem",
+            "fontSize": "1rem",
+            "fontWeight": "500",
+            "color": "neutral.text.primary",
+            "hover": {
+              "color": "primary.blue.main",
+              "transition": "0.2s ease"
+            }
+          },
+          "languageSelector": {
+            "position": "right",
+            "options": ["EN", "AR"],
+            "style": "minimal, texto simples",
+            "spacing": "0.5rem"
+          },
+          "ctaButton": {
+            "label": "Free Consultation",
+            "style": "primary",
+            "position": "right",
+            "marginLeft": "1rem"
+          }
+        }
+      },
+
+      "hero": {
+        "description": "Seção hero com imagem de fundo e conteúdo sobreposto",
+        "styles": {
+          "height": "600px - 700px",
+          "position": "relative",
+          "backgroundImage": "imagem de construção moderna com céu azul",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "overlay": "rgba(0,0,0,0.3) - opcional para contraste"
+        },
+        "content": {
+          "position": "absolute",
+          "top": "50%",
+          "left": "10% - 15%",
+          "transform": "translateY(-50%)",
+          "maxWidth": "600px",
+          "color": "white",
+          "zIndex": 10
+        },
+        "elements": {
+          "badge": {
+            "text": "Designing for the Future",
+            "fontSize": "0.875rem",
+            "fontWeight": "500",
+            "marginBottom": "1rem",
+            "opacity": 0.9
+          },
+          "headline": {
+            "fontSize": "3.5rem - 4.5rem",
+            "fontWeight": "700",
+            "lineHeight": "1.2",
+            "marginBottom": "1.5rem",
+            "textShadow": "0 2px 4px rgba(0,0,0,0.3)"
+          },
+          "description": {
+            "fontSize": "1.125rem",
+            "lineHeight": "1.6",
+            "marginBottom": "2rem",
+            "opacity": 0.95
+          },
+          "ctaButton": {
+            "label": "Explore Our Services",
+            "style": "primary large",
+            "marginTop": "1rem"
+          },
+          "stats": {
+            "position": "top-right",
+            "text": "10k+ Happy Customers",
+            "fontSize": "0.875rem",
+            "fontWeight": "500"
+          },
+          "featuredCard": {
+            "position": "bottom-right",
+            "background": "white",
+            "padding": "1.5rem",
+            "borderRadius": "8px",
+            "maxWidth": "300px",
+            "boxShadow": "0 4px 6px rgba(0,0,0,0.1)"
+          }
+        }
+      },
+
+      "section": {
+        "description": "Seções de conteúdo padrão",
+        "styles": {
+          "padding": "4rem 2rem",
+          "maxWidth": "1280px",
+          "margin": "0 auto"
+        },
+        "headings": {
+          "sectionTitle": {
+            "fontSize": "0.875rem",
+            "fontWeight": "500",
+            "color": "accent.red.main",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.05em",
+            "marginBottom": "0.5rem"
+          },
+          "mainHeading": {
+            "fontSize": "2.5rem - 3rem",
+            "fontWeight": "700",
+            "color": "neutral.text.primary",
+            "marginBottom": "1rem"
+          },
+          "subHeading": {
+            "fontSize": "1.5rem - 2rem",
+            "fontWeight": "600",
+            "color": "neutral.text.primary",
+            "marginBottom": "1.5rem"
+          },
+          "description": {
+            "fontSize": "1rem",
+            "lineHeight": "1.6",
+            "color": "neutral.text.secondary",
+            "maxWidth": "600px",
+            "marginBottom": "2rem"
+          }
+        }
+      },
+
+      "twoColumn": {
+        "description": "Layout de duas colunas para seções de conteúdo",
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "1fr 1fr",
+          "gap": "3rem - 4rem",
+          "alignItems": "center"
+        },
+        "breakpoints": {
+          "mobile": "stack (1 coluna)",
+          "tablet": "stack (1 coluna)",
+          "desktop": "2 colunas"
+        }
+      },
+
+      "featureList": {
+        "description": "Lista de características com ícones",
+        "styles": {
+          "spacing": "2rem 0"
+        },
+        "item": {
+          "display": "flex",
+          "gap": "1rem",
+          "marginBottom": "2rem",
+          "alignItems": "flex-start"
+        },
+        "icon": {
+          "type": "plus (+) vermelho",
+          "size": "24px",
+          "color": "accent.red.main",
+          "fontWeight": "bold",
+          "flexShrink": 0
+        },
+        "content": {
+          "title": {
+            "fontSize": "1.25rem",
+            "fontWeight": "600",
+            "marginBottom": "0.5rem"
+          },
+          "description": {
+            "fontSize": "1rem",
+            "lineHeight": "1.6",
+            "color": "neutral.text.secondary"
+          }
+        }
+      },
+
+      "button": {
+        "description": "Botões de ação e CTA",
+        "variants": {
+          "primary": {
+            "background": "primary.blue.main",
+            "color": "white",
+            "padding": "0.75rem 1.5rem",
+            "borderRadius": "6px",
+            "fontWeight": "500",
+            "fontSize": "1rem",
+            "border": "none",
+            "cursor": "pointer",
+            "transition": "all 0.2s ease",
+            "hover": {
+              "background": "primary.blue.dark",
+              "transform": "translateY(-2px)",
+              "boxShadow": "0 4px 8px rgba(0,0,0,0.2)"
+            }
+          },
+          "secondary": {
+            "background": "transparent",
+            "color": "primary.blue.main",
+            "padding": "0.75rem 1.5rem",
+            "borderRadius": "6px",
+            "fontWeight": "500",
+            "fontSize": "1rem",
+            "border": "2px solid primary.blue.main",
+            "cursor": "pointer",
+            "transition": "all 0.2s ease",
+            "hover": {
+              "background": "primary.blue.main",
+              "color": "white"
+            }
+          },
+          "large": {
+            "padding": "1rem 2rem",
+            "fontSize": "1.125rem"
+          }
+        }
+      },
+
+      "card": {
+        "description": "Cards para projetos, serviços e conteúdo destacado",
+        "styles": {
+          "background": "white",
+          "borderRadius": "8px - 12px",
+          "overflow": "hidden",
+          "boxShadow": "0 2px 8px rgba(0,0,0,0.1)",
+          "transition": "all 0.3s ease"
+        },
+        "hover": {
+          "transform": "translateY(-4px)",
+          "boxShadow": "0 8px 16px rgba(0,0,0,0.15)"
+        },
+        "elements": {
+          "image": {
+            "width": "100%",
+            "height": "250px - 300px",
+            "objectFit": "cover"
+          },
+          "content": {
+            "padding": "1.5rem - 2rem"
+          },
+          "title": {
+            "fontSize": "1.25rem",
+            "fontWeight": "600",
+            "marginBottom": "0.5rem"
+          },
+          "description": {
+            "fontSize": "0.875rem",
+            "color": "neutral.text.secondary",
+            "lineHeight": "1.5"
+          }
+        }
+      },
+
+      "projectGrid": {
+        "description": "Grid de projetos com imagens",
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(3, 1fr)",
+          "gap": "1.5rem - 2rem"
+        },
+        "breakpoints": {
+          "mobile": "1 coluna",
+          "tablet": "2 colunas",
+          "desktop": "3 colunas"
+        }
+      },
+
+      "serviceCarousel": {
+        "description": "Carrossel de serviços com números (01, 02, 03...)",
+        "styles": {
+          "display": "flex",
+          "gap": "1rem",
+          "overflow": "auto",
+          "padding": "1rem 0"
+        },
+        "item": {
+          "display": "flex",
+          "flexDirection": "column",
+          "alignItems": "center",
+          "minWidth": "200px"
+        },
+        "number": {
+          "fontSize": "2rem",
+          "fontWeight": "700",
+          "color": "primary.blue.main",
+          "marginBottom": "0.5rem"
+        },
+        "image": {
+          "width": "100%",
+          "height": "200px",
+          "objectFit": "cover",
+          "borderRadius": "8px"
+        }
+      },
+
+      "categoryNavigation": {
+        "description": "Navegação horizontal com círculos numerados para categorias",
+        "styles": {
+          "display": "flex",
+          "gap": "1rem",
+          "marginBottom": "2rem",
+          "overflow": "auto",
+          "padding": "0.5rem 0"
+        },
+        "item": {
+          "display": "flex",
+          "flexDirection": "column",
+          "alignItems": "center",
+          "minWidth": "120px",
+          "cursor": "pointer",
+          "transition": "all 0.2s ease"
+        },
+        "circle": {
+          "width": "60px",
+          "height": "60px",
+          "borderRadius": "50%",
+          "background": "white",
+          "border": "2px solid primary.blue.main",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "fontWeight": "600",
+          "fontSize": "1rem",
+          "color": "primary.blue.main",
+          "marginBottom": "0.5rem"
+        },
+        "active": {
+          "background": "primary.blue.main",
+          "color": "white"
+        },
+        "label": {
+          "fontSize": "0.875rem",
+          "textAlign": "center",
+          "color": "neutral.text.primary"
+        }
+      },
+
+      "badge": {
+        "description": "Badges e indicadores de destaque",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "gap": "0.5rem",
+          "padding": "0.5rem 1rem",
+          "borderRadius": "20px",
+          "fontSize": "0.875rem",
+          "fontWeight": "500"
+        },
+        "variants": {
+          "achievement": {
+            "background": "rgba(220, 38, 38, 0.1)",
+            "color": "accent.red.main",
+            "icon": "badge/medal icon"
+          },
+          "stat": {
+            "background": "rgba(59, 130, 246, 0.1)",
+            "color": "primary.blue.main"
+          }
+        }
+      },
+
+      "processSteps": {
+        "description": "Seção de processo com steps numerados",
+        "styles": {
+          "background": "primary.blue.darker",
+          "color": "white",
+          "padding": "4rem 2rem"
+        },
+        "item": {
+          "display": "flex",
+          "gap": "1rem",
+          "marginBottom": "2rem",
+          "alignItems": "flex-start"
+        },
+        "icon": {
+          "type": "checkmark branco",
+          "size": "24px",
+          "flexShrink": 0
+        },
+        "content": {
+          "title": {
+            "fontSize": "1.25rem",
+            "fontWeight": "600",
+            "marginBottom": "0.5rem"
+          },
+          "description": {
+            "fontSize": "1rem",
+            "lineHeight": "1.6",
+            "opacity": 0.9
+          }
+        }
+      },
+
+      "benefitGrid": {
+        "description": "Grid de benefícios com ícones azuis",
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(2, 1fr)",
+          "gap": "2rem"
+        },
+        "item": {
+          "display": "flex",
+          "gap": "1rem",
+          "alignItems": "flex-start"
+        },
+        "icon": {
+          "type": "ícone azul",
+          "size": "32px",
+          "color": "primary.blue.main",
+          "flexShrink": 0
+        },
+        "content": {
+          "title": {
+            "fontSize": "1.125rem",
+            "fontWeight": "600",
+            "marginBottom": "0.5rem"
+          },
+          "description": {
+            "fontSize": "0.875rem",
+            "lineHeight": "1.5",
+            "color": "neutral.text.secondary"
+          }
+        }
+      }
+    },
+
+    "images": {
+      "hero": {
+        "description": "Imagem de construção moderna com fachada de vidro e céu azul",
+        "aspectRatio": "16:9",
+        "objectFit": "cover"
+      },
+      "project": {
+        "description": "Imagens de projetos arquitetônicos modernos",
+        "aspectRatio": "4:3",
+        "objectFit": "cover",
+        "borderRadius": "8px"
+      },
+      "team": {
+        "description": "Fotos profissionais de equipe trabalhando",
+        "aspectRatio": "3:4",
+        "objectFit": "cover"
+      }
+    },
+
+    "principles": {
+      "visualHierarchy": {
+        "description": "Hierarquia visual clara através de tamanhos de fonte, pesos e espaçamento",
+        "guidelines": [
+          "Títulos principais devem ser 2-3x maiores que o texto do corpo",
+          "Use peso de fonte (700) para elementos de destaque",
+          "Espaçamento generoso entre seções (4-6rem)"
+        ]
+      },
+      "colorUsage": {
+        "description": "Uso estratégico de cores para guiar atenção",
+        "guidelines": [
+          "Laranja primário (#FF6B35) para CTAs principais e elementos interativos",
+          "Azul primário (#1E3A8A) para seções de destaque, hero sections e elementos estruturais",
+          "Vermelho para ícones de destaque e badges",
+          "Fundo neutro claro para contraste",
+          "Branco para cards e seções destacadas",
+          "Combinação laranja e azul reflete a identidade visual da VR Construtora"
+        ]
+      },
+      "spacing": {
+        "description": "Espaçamento generoso e respiração visual",
+        "guidelines": [
+          "Padding vertical de seções: 4-6rem",
+          "Gap entre elementos relacionados: 1.5-2rem",
+          "Margem entre seções: 6-8rem",
+          "Padding interno de cards: 1.5-2rem"
+        ]
+      },
+      "typography": {
+        "description": "Tipografia clara e legível",
+        "guidelines": [
+          "Line-height generoso (1.5-1.6) para legibilidade",
+          "Contraste adequado entre texto e fundo",
+          "Hierarquia clara através de tamanhos e pesos",
+          "Uso de uppercase para labels pequenos"
+        ]
+      },
+      "interactivity": {
+        "description": "Feedback visual em interações",
+        "guidelines": [
+          "Transições suaves (0.2-0.3s ease)",
+          "Hover states com transform e shadow",
+          "Estados ativos claramente visíveis",
+          "Cursor pointer em elementos clicáveis"
+        ]
+      },
+      "responsive": {
+        "description": "Design responsivo e adaptável",
+        "guidelines": [
+          "Breakpoints: mobile (640px), tablet (768px), desktop (1024px), large (1280px)",
+          "Grids adaptam de 3 colunas para 2, depois 1",
+          "Texto reduz proporcionalmente em mobile",
+          "Padding reduz em telas menores"
+        ]
+      },
+      "modernity": {
+        "description": "Estética moderna e profissional",
+        "guidelines": [
+          "Bordas arredondadas sutis (6-12px)",
+          "Sombras suaves e elevadas",
+          "Imagens de alta qualidade",
+          "Layout limpo e organizado",
+          "Uso de espaços em branco estratégicos"
+        ]
+      }
+    },
+
+    "patterns": {
+      "sectionStructure": {
+        "description": "Estrutura padrão de seções",
+        "pattern": [
+          "Título de seção pequeno (uppercase, vermelho)",
+          "Título principal grande (bold, escuro)",
+          "Descrição (texto secundário, max-width 600px)",
+          "Botão CTA (opcional)",
+          "Conteúdo principal (grid, lista, cards)"
+        ]
+      },
+      "twoColumnLayout": {
+        "description": "Layout de duas colunas padrão",
+        "pattern": [
+          "Coluna esquerda: texto, lista de features, conteúdo",
+          "Coluna direita: imagem, foto, visual",
+          "Gap de 3-4rem entre colunas",
+          "Alinhamento vertical: center"
+        ]
+      },
+      "heroPattern": {
+        "description": "Padrão de hero section",
+        "pattern": [
+          "Imagem de fundo full-width",
+          "Conteúdo sobreposto posicionado à esquerda (10-15%)",
+          "Badge pequeno no topo",
+          "Headline grande e impactante",
+          "Descrição média",
+          "Botão CTA proeminente",
+          "Elementos decorativos (stats, cards) posicionados estrategicamente"
+        ]
+      }
+    },
+
+    "accessibility": {
+      "contrast": {
+        "description": "Contraste adequado para acessibilidade",
+        "guidelines": [
+          "Texto sobre fundo claro: mínimo 4.5:1",
+          "Texto sobre fundo escuro: mínimo 4.5:1",
+          "Texto grande: mínimo 3:1"
+        ]
+      },
+      "interactivity": {
+        "description": "Áreas de toque e interação",
+        "guidelines": [
+          "Botões: mínimo 44x44px",
+          "Links: área de toque clara",
+          "Focus states visíveis"
+        ]
+      }
+    }
+  }
+}
+
